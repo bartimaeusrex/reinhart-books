@@ -244,7 +244,7 @@ p.firstpara {
   text-indent:0;
 }
 
-.content::after {
+.content::after, .postcontent::after {
   font-size:.75em;
   font-family: 'Courier Prime', monospace;
   content:"© Patrick Reinhart MMXXIV";
