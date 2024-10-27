@@ -1,0 +1,383 @@
+:root {
+  --bg-color: #f0eadcff;
+}
+
+body {
+  margin: 2em 0 0 2em;
+  font-family: 'EB Garamond', serif;
+  font-size:1em;
+  background-color: var(--bg-color);
+  background-image: url(images/page_bg_light.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-blend-mode:normal;
+}
+
+/* Grid stuff from: https://codepen.io/geoffgraham/pen/EbVELV */
+
+.grid {
+  /* Grid Fallback */
+  display: flex;
+  flex-wrap: wrap;
+  
+  /* Supports Grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+  grid-auto-rows: minmax(auto);
+  grid-gap: 1em;
+}
+
+.postbox {
+  /* display: flex;  CAUSES THE DATE/TITLE TO BE PLACED TO THE RIGHT OF THE POST DESCRIPTION */
+  align-items: center;
+  justify-content: center;
+  
+  /* Flex Fallback */
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+}
+
+/* If Grid is supported, remove the margin we set for the fallback */
+@supports (display: grid) {
+  .postbox {
+    margin: 0;
+  }
+}
+/* END OF GRID STUFF FROM CODEPEN */
+
+
+a {
+  /*text-underline-offset: .25em;
+  text-decoration:underline dashed #666;*/
+  color: #070707;
+  text-decoration:none;
+  background-color: var(--bg-color);
+}
+
+.source {
+  font-size:.75em;
+  text-align:center;
+  margin:-1em 0 1em 0em;
+  padding:0;
+}
+
+.center-this {
+  margin: 0 auto;
+  text-align:center;
+}
+
+.align-right {
+  margin: 0;
+  margin-right:1em;
+  text-align:right;
+}
+
+.manicule {
+  width:2em;
+  margin:0;
+  padding: 0;
+  position:relative;
+  top:.25em;
+}
+
+.img-1em {width:1em;}
+.img-2em {width:2em;}
+.img-3em {width:3em;}
+.img-4em {width:4em;}
+.img-8em {width:8em;}
+.img-10px {width:10px;}
+.img-16em {width:16em;}
+
+.pillcrow {
+  margin:0;
+  padding:0;
+  height:1.25em;
+  width:auto;
+}
+
+.stars {
+  height:4em;
+  width:10em;
+  padding-bottom:2em;
+}
+
+p {
+  margin:1em 0 0 0;
+}
+
+blockquote {
+  color:#752626;
+}
+
+/*
+blockquote {
+  border-left:1em solid rgba(255, 232, 155, 0.7);
+  text-indent:-2.5em;
+}
+
+blockquote::before {
+  content: "❝";
+  font-size:5em;
+  position:relative;
+  left:0em;
+  top:.5em;
+  color:rgba(201, 154, 122, 0.699);
+}
+*/
+
+.gray, .grey {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all 1s ease-in-out;
+  /* background-blend-mode: screen;
+  background-image: url(images/halftonescreen.png);
+  background-size: 50%; */
+}
+
+#title,
+#title a {
+  color:rgb(19, 19, 19);
+  font-family: 'Courier Prime', monospace;
+  font-size:1.25em;
+  text-decoration: none;
+  background-color: var(--bg-color);
+  border-bottom:4px double rgba(0, 0, 0, 0.144);
+  position:sticky;
+  left:1.5em;
+  top:0em;
+  padding:0 5px;
+  width:max-content;
+  z-index:3;
+}
+
+#title::before {
+  content: "REINHART BOOKS";
+}
+
+.rb_header, .bodyimg {
+  padding:0;
+  margin:auto;
+  display:block;
+}
+
+.rb_header {
+  width:100%;
+}
+
+.bodyimg {
+  width:50%;
+}
+
+.windowpane {
+  background-image: url(images/fragonard_swing.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+}
+
+/* .header-email {
+  position:relative;
+  top:1.5em;
+  left:auto;
+  color:rgba(114, 53, 44, 0.596);
+} */
+
+.tagline {
+  font-family: 'Courier Prime', monospace;
+  font-size:1em;
+}
+
+.multiply {mix-blend-mode: multiply;}
+.screen {
+  mix-blend-mode: screen;
+  background-image: url(images/halftonescreen.png);
+  background-size: 50%;
+}
+
+.content, .postcontent {
+  line-height:1.5em;
+  padding:0;
+  margin:auto;
+  display:block;
+}
+
+.content {width:42em;}
+.postcontent {width:36em;}
+
+/* .content a {
+  background-color: var(--bg-color);
+}
+  */
+
+.hilite {
+  background-color: rgba(255, 240, 155, 0.2);
+}
+
+.highlighter {
+  background-color: rgba(255, 240, 155, 0.3);
+  text-decoration:underline solid orange;
+  text-underline-offset: .25em;
+}
+
+.highlighter:hover {
+  text-decoration:underline solid rgba(26, 65, 42, 0.527);
+}
+
+.highlighter::after {
+  content:" ➹"
+}
+
+.highlighter:hover::after {
+  content:" ➼"
+}
+
+.article p {
+  text-indent:1.25em;
+}
+
+.firstpara::before {
+  content:"¶ ";
+}
+
+p.firstpara {
+  text-indent:0;
+}
+
+.content::after {
+  font-size:.75em;
+  font-family: 'Courier Prime', monospace;
+  content:"© Patrick Reinhart MMXXIV";
+}
+
+.article::first-line {
+  color:rgb(114, 53, 44);
+  font-family: "Grenze Gotisch", serif;
+  font-size:larger;
+}
+
+@media (max-width:46em) {
+  .content, .postcontent {
+    width: 90%;
+    margin:auto;
+  }
+
+  .tagline {
+    font-size:smaller;
+  }
+
+  .bodyimg {
+    width:80%;
+  }
+}
+
+.inwhich {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  margin-top:1em;
+  width:85%;
+  font-style:italic;
+}
+
+.inwhich::first-line {
+  text-transform:capitalize;
+}
+
+.month {
+  font-size:1.5em;
+  font-family: 'Courier Prime', monospace;
+  text-transform:uppercase;
+  margin:1.5em 0 1.5em 0;
+  color:rgba(71, 161, 98, 0.384);
+  text-align:center;
+}
+
+.month::after, .month::before {
+  content:" ×———× "
+}
+
+.date {
+  /* margin:2em 2em; */
+  text-transform:uppercase;
+  color:rgb(24, 61, 26);
+  border-bottom: 1px dashed rgba(31, 31, 31, 0.4);
+  /* background: linear-gradient(90deg, rgba(255,221,221,1) 0%, rgba(255,255,255,0) 100%); */
+  font-weight:600;
+  font-size:1.125em;
+  font-family: 'Courier Prime', monospace;
+  /* another good red - #d25b5b */
+}
+
+.date a {
+  background-color: red;
+}
+
+.blurb {
+  margin-bottom:2em;
+}
+
+.blurb::after {
+  content:"";
+  font-size:1rem;
+}
+
+a .blurb {
+  text-decoration:none;
+  background-color: var(--bg-color);
+}
+
+.asterism, .fleuron {
+  text-align:center;
+  margin:1em 0;
+}
+
+.asterism::after {
+  content:"⁂";
+}
+
+.fleuron::after {
+  content: "❦";
+}
+
+.grenze {
+  font-family: "Grenze Gotisch", serif;
+  font-optical-sizing: auto;
+  font-size: larger;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer {
+  padding-top:1em;
+  font-family: 'Courier Prime', monospace;
+}
+
+.logo_pm {
+  height:3em;
+  width:3.01em;
+}
+
+.img-flex-lineup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    margin:0;
+    max-width: 700px;
+    gap:0;
+  }
+
+
+  
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: .5em;
+  height: .5em;
+  }
+  
+::-webkit-scrollbar-track {border: 1.5px solid #ffffff00;}
+::-webkit-scrollbar-thumb {background: #d25b5b;}
+::-webkit-scrollbar-thumb:hover {background: #944040;}
