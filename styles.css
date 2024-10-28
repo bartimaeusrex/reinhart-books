@@ -141,19 +141,19 @@ blockquote::before {
   font-family: 'Courier Prime', monospace;
   font-size:1.25em;
   text-decoration: none;
-  background-color: var(--bg-color);
-  border-bottom:4px double rgba(0, 0, 0, 0.144);
+  /* background-color: var(--bg-color);
+  border-bottom:4px double rgba(0, 0, 0, 0.144); */
   position:sticky;
   left:1.5em;
-  top:0em;
+  top:1em;
   padding:0 5px;
   width:max-content;
   z-index:3;
 }
 
-#title::before {
+/* #title::before {
   content: "REINHART BOOKS";
-}
+} */
 
 .rb_header, .bodyimg {
   padding:0;
@@ -232,6 +232,14 @@ blockquote::before {
   content:" ➼"
 }
 
+.aside {
+  background-color: #75262600;
+  color:#070707a8;
+}
+
+.aside::before {content:"["}
+.aside::after {content:"]"}
+
 .article p {
   text-indent:1.25em;
 }
@@ -250,10 +258,29 @@ p.firstpara {
   content:"© Patrick Reinhart MMXXIV";
 }
 
+.disclaimer {
+  margin:1em 0;
+  font-size:.75em;
+  line-height: 90%;
+}
+
 .article::first-line {
   color:rgb(114, 53, 44);
   font-family: "Grenze Gotisch", serif;
   font-size:larger;
+}
+
+.month {
+  font-size:1.5em;
+  font-family: 'Courier Prime', monospace;
+  text-transform:uppercase;
+  margin:1.5em 0 1.5em 0;
+  color:rgba(71, 161, 98, 0.384);
+  text-align:center;
+}
+
+.month::after, .month::before {
+  content:" ×———× "
 }
 
 @media (max-width:46em) {
@@ -264,10 +291,18 @@ p.firstpara {
 
   .tagline {
     font-size:smaller;
+    line-height:90%;
+    margin:.75em 0 0 0;
   }
 
   .bodyimg {
     width:80%;
+  }
+}
+
+@media (max-width:500px) {
+  .month::after, .month::before {
+    content:" × "
   }
 }
 
@@ -282,19 +317,6 @@ p.firstpara {
 
 .inwhich::first-line {
   text-transform:capitalize;
-}
-
-.month {
-  font-size:1.5em;
-  font-family: 'Courier Prime', monospace;
-  text-transform:uppercase;
-  margin:1.5em 0 1.5em 0;
-  color:rgba(71, 161, 98, 0.384);
-  text-align:center;
-}
-
-.month::after, .month::before {
-  content:" ×———× "
 }
 
 .date {
