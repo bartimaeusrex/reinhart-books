@@ -75,7 +75,7 @@ a {
 
 .manicule {
   width:2em;
-  margin:0;
+  margin:0 0 0 .4em;
   padding: 0;
   position:relative;
   top:.25em;
@@ -139,16 +139,24 @@ blockquote::before {
 #title a {
   color:rgb(19, 19, 19);
   font-family: 'Courier Prime', monospace;
-  font-size:1.25em;
+  /* font-size:1.25em; */
   text-decoration: none;
   /* background-color: var(--bg-color);
   border-bottom:4px double rgba(0, 0, 0, 0.144); */
   position:sticky;
-  left:1.5em;
+  /* left:1.5em;
   top:1em;
-  padding:0 5px;
-  width:max-content;
+  padding:0 5px; */
+  /* width:max-content; */
   z-index:3;
+
+
+  margin:0 auto 1em auto;
+  display:block;
+  top:.5em;
+  /* padding:.5em; */
+  width:min-content;
+  /* box-shadow: -3px 3px 3px rgba(83, 62, 62, 0.116); */
 }
 
 /* #title::before {
@@ -166,14 +174,14 @@ blockquote::before {
 }
 
 .bodyimg {
-  width:50%;
+  width:100%;
 }
 
 .windowpane {
-  background-image: url(images/fragonard_swing.jpg);
+  background-image: url(images/fragonard_swing2.jpg);
   background-attachment: fixed;
-  background-position: bottom;
-  background-size: cover;
+  background-position: top;
+  background-size: max-content;
 }
 
 /* .header-email {
@@ -373,6 +381,7 @@ a .blurb {
 footer {
   padding-top:1em;
   font-family: 'Courier Prime', monospace;
+  vertical-align:middle;
 }
 
 .logo_pm {
