@@ -1,5 +1,6 @@
 :root {
   --bg-color: #f0eadcff;
+  --titlebg: url(images/endpapers_marbled_antiquetealred.jpg);
 }
 
 body {
@@ -85,6 +86,7 @@ a {
 .img-2em {width:2em;}
 .img-3em {width:3em;}
 .img-4em {width:4em;}
+.img-6em {width:6em;}
 .img-8em {width:8em;}
 .img-10px {width:10px;}
 .img-16em {width:16em;}
@@ -178,7 +180,8 @@ blockquote::before {
 }
 
 .windowpane {
-  background-image: url(images/fragonard_swing2.jpg);
+  background-image: var(--titlebg);
+  /* BG IMAGE DEFINE AT ROOT AT TOP OF DOC!! */
   background-attachment: fixed;
   background-position: top;
   background-size: max-content;
@@ -208,7 +211,31 @@ blockquote::before {
   padding:0;
   margin:auto;
   display:block;
+  position:relative;
+  /* trying to get the Sattler illustration to sit to the left of the main content column */
 }
+
+.danceofdeath {
+  position:absolute;
+  right:100%;
+  bottom:0;
+  width:350px;
+  height:479px;
+  background-image: url(images/josephsattler_danceofdeath_trans.png);
+  background-size:contain;
+  margin:0 2em 2em 0;
+  /* font-family: 'Courier Prime', monospace;
+  font-size:.65em;
+  color:#00000077; */
+  /* Just trying to get the text at the bottom of the div, which is trickier than expected: */
+  display: flex;
+  align-items: flex-end;
+  visibility: visible;
+}
+
+/* .danceofdeath::after {
+  content:"sdsdsdsds";
+} */
 
 .content {width:42em;}
 .postcontent {width:36em;}
@@ -233,11 +260,11 @@ blockquote::before {
 }
 
 .highlighter::after {
-  content:" ➹"
+  content:" ➼"
 }
 
 .highlighter:hover::after {
-  content:" ➼"
+  content:" ➹"
 }
 
 .aside {
@@ -301,6 +328,10 @@ p.firstpara {
     font-size:smaller;
     line-height:90%;
     margin:.75em 0 0 0;
+  }
+
+  .danceofdeathdisclaimer {
+    visibility: hidden;
   }
 
   .bodyimg {
