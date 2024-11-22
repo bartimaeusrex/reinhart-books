@@ -1,6 +1,12 @@
 :root {
   --bg-color: #f0eadcff;
-  --titlebg: url(images/endpapers_marbled_antiquetealred.jpg);
+  --titlebg: url(images/davinci_johnthebaptist_skin.jpg
+  );
+}
+
+::selection {
+  background: rgba(80, 201, 86, 0.253);
+  /* color:rgba(0, 0, 0); */
 }
 
 body {
@@ -195,6 +201,7 @@ blockquote::before {
   background-attachment: fixed;
   background-position: top;
   background-size: max-content;
+  margin-top:-2.5em;
 }
 
 /* .header-email {
@@ -446,10 +453,13 @@ footer {
   
 /* Scrollbar styles */
 ::-webkit-scrollbar {
-  width: .5em;
+  width: .75em;
   height: .5em;
   }
   
 ::-webkit-scrollbar-track {border: 1.5px solid #ffffff00;}
-::-webkit-scrollbar-thumb {background: #d25b5b;}
-::-webkit-scrollbar-thumb:hover {background: #944040;}
+::-webkit-scrollbar-thumb {background: rgb(24, 61, 26);}
+::-webkit-scrollbar-thumb:hover {background: rgb(24, 61, 26);}
+
+
+/* color:rgb(24, 61, 26); */
