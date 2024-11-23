@@ -2,25 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- RBHeaderInfo contains the Google Fonts code, link to CSS file, favicon, FontAwesome, basic meta info -->
+  <rb-headerinfo></rb-headerinfo>
 
-  <link href="styles.css" rel="stylesheet" />
-  <link rel="shortcut icon" type="image/x-icon" href="images/fleuron.ico">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Press+Start+2P&family=Courier+Prime:ital@0;1&family=Cutive+Mono&family=Hammersmith+One&family=Lexend+Tera&family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Montserrat:ital,wght@0,200;0,700;0,900;1,200;1,700&family=Sansita&family=VT323&family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
-  
-  <script src="https://kit.fontawesome.com/0b4688c080.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8"><!-- Necessary to have here for special characters -->
+  <script defer src="RBHeaderInfo.js"></script>
+  <script defer src="RBTitleButton.js"></script>
+  <script defer src="RBSignature.js"></script>
+  <script defer src="RBFooter.js"></script>
 
   <title>ReinhartBooks.com/2024 November 7: Micropoetry Throwback</title>
 </head>
 
 <body>
-  <a href="./"><p id="title"><!-- #TITLE::AFTER TEXT IN CSS FILE -->
-    <img src="images/rb_header_humane.png" width="200px"/>
-  </p></a>
+  <!-- TITLE BUTTON DEFINED IN RBTitleButton.js WEB COMPONENT -->
+  <rb-titlebutton></rb-titlebutton>
   
   <section class="postcontent">
     <div class="danceofdeath multiply"></div>
@@ -121,27 +117,15 @@ liquid psychedelia
     <p>
       And thank you as always, Internet Archive and The Wayback Machine for making retrieving these a possibility.
     </p>
-    <br />
-    <div class="align-right grenze">— Reinhart.<br />
-      <a href="https://archive.org/details/billminder00robi/page/n338/mode/1up" target="_blank">
-      <img class="img-4em multiply" src="images/whr_birdexecution.png"/></a>
-    </div>
-  </div>
-     <!-- FOOTER -->
-     <footer>
-      <a href="https://curiouser.house/" target="_blank"><img class="img-2em multiply" src="images/curiouserhouse.png" /></a>
-      <a href="https://pilcrow.monster/" target="_blank"><img class="img-2em multiply" src="images/pilcrowmonster.png" /></a>
-      <a href="https://www.instagram.com/mrpatrickreinhart/" target="_blank"><img class="img-2em multiply" src="images/instagram.png" /></a>
-      <a href="https://fable.co/178026429369" target="_blank"><img class="img-2em multiply" src="images/fable.jpg" /></a>
-      <a href="https://app.thestorygraph.com/profile/mrpatrickreinhart" target="_blank"><img class="img-2em multiply" src="images/storygraph.jpg" /></a>
-      <a href="https://bookshop.org/shop/curiouserhouse" target="_blank"><img class="img-2em multiply" src="images/bookshop.png" /></a>
-      <br />
-      ■ <a href="mailto:patrick@reinhartbooks.com" class="highlighter">patrick@reinhartbooks.com</a>
-      <div class="disclaimer aside">Disclaimer: All links to books on Bookshop.org are affiliate links, on which I earn a small commission <em>if</em> you end up buying books through them. Otherwise, there will be no ads, no SEO, and no use of AI.</div>
-     </footer>
-  </section>
 
 
-</body>
-</html>
-
+    <!-- SIGNATURE AND FOOTER DEFINED IN RESPECTIVE .JS FILES! -->
+    <rb-signature></rb-signature></div> <!-- END ARTICLE DIV -->
+    <rb-footer></rb-footer>
+  
+    </section>
+    <!-- COPYRIGHT INFO LINE DEFINED IN STYLES.CSS:
+          .content::after, .postcontent::after -->
+  
+  </body>
+  </html>
