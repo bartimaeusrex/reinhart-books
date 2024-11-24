@@ -6,78 +6,12 @@
   <rb-headerinfo></rb-headerinfo>
 
   <meta charset="UTF-8"><!-- Necessary to have here for special characters -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/fleuron.ico"> <!-- not coming thru via JS file when uploaded for some reason -->
   <script defer src="RBHeaderInfo.js"></script>
   <script defer src="RBTitleButton.js"></script>
+  <script defer src="RBManicule.js"></script>
   <script defer src="RBSignature.js"></script>
   <script defer src="RBFooter.js"></script>
-
-<!--
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Courier+Prime:ital@0;1&family=Cutive+Mono&family=Hammersmith+One&family=Lexend+Tera&family=Montserrat:ital,wght@0,200;0,700;0,900;1,200;1,700&family=Sansita&family=VT323&display=swap" rel="stylesheet">
-
-font-family: 'Amatic SC', cursive;
-font-family: 'Courier Prime', monospace;
-font-family: 'Cutive Mono', monospace;
-font-family: 'EB Garamond', serif;
-font-family: 'Hammersmith One', sans-serif;
-font-family: 'Lexend Tera', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Sansita', sans-serif;
-font-family: 'VT323', monospace;
-font-family: 'Press Start 2P', cursive;
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.grenze-gotisch-<uniquifier> {
-  font-family: "Grenze Gotisch", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
--->
-
-  <!--
-    ¶⸿
-    ●⁕•➺➻
-    ⁂⁝⁘…
-    †‡
-    ©§✚
-    “”‘’
-    ✃✁
-    ☞ ☛ ☟☝☚
-    ⬈⬉⬊⬋⬌⬀⬁⬂⬃
-    ⇓
-    ▼▲
-    🡄🡆🡅🡇
-    ❧❦☙
-    ↓→↑←
-    ✉
-
-    ALT CODES (ALT+#)
-    ---------------------------------------------
-    1 ☺ 3 ♥ 15 ☼ 127 ⌂
-    7 • 9 ○ 0176 ° 249 ∙
-    13 ♪ 14 ♫
-
-    24 ↑ 25 ↓ 26 → 27 ←
-    16 ► 17 ◄ 30 ▲ 31 ▼
-    22 ▬ 219 █ 220 ▄ 221 ▌ 222 ▐ 223 ▀ 254 ■
-    0150 – 0151 — 45 - 179 │ 240 ≡ 186 ║
-
-    176 ░ 177 ▒ 178 ▓
-
-    19 ‼ 0133 … 0239 ï
-    20 ¶ 21 § 0191 ¿
-    0185 ¹ 253 ² 0179 ³ 171 ½ 172 ¼ 0190 ¾
-    0162 ¢ 0128 € 0163 £
-
-    0145 ‘ 0146 ’ 0147 “ 0148 ”
-    174 « 175 »
-
-    0153 ™ 0169 © 0174 ®
-    0215 × 0177 ± 236 ∞ 242 ≥ 243 ≤ 247 ≈
-
-  -->
 
   <title>Reinhart Books</title>
 </head>
@@ -89,7 +23,7 @@ font-family: 'Press Start 2P', cursive;
   <section class="content">
 
     <a href="./"><img class="rb_header windowpane multiply" src="images/rb_sirinswing_window.png" /></a>
-    <div class="tagline center-this">● a humble oasis of calm bookish musings from a lifelong lover of literature/erstwhile rare book dealer/and <a href="https://curiouser.house/" class="hilite">Curiouser House Publishing</a>, indie publisher of classic & obscure titles ●</div>
+    <div class="tagline center-this">● a humble oasis of bookish musings from a lifelong lover of literature/erstwhile book dealer/and editor of <a href="https://curiouser.house/" class="hilite">Curiouser House Publishing</a>, indie publisher of classic & obscure books ●</div>
 
 <div class="fleuron"></div>
 
@@ -102,37 +36,49 @@ font-family: 'Press Start 2P', cursive;
       <!-- POST --> 
       <!-- <div class="postbox">
         <a href="./20241115" class="date">2024 November 15: Piranesi & Possibilities</a>
-      <p class="blurb firstpara article">In which I give a review of gushing praise but little detail, and some thoughts of potential, but unlikely, adaptation of Susanna Clarke's beautiful novel.<a href="./20241115"><img class="manicule" src="images/manicule0.png" /></a></p>
+      <p class="blurb firstpara article">In which I give a review of gushing praise but little detail, and some thoughts of potential, but unlikely, adaptation of Susanna Clarke's beautiful novel.<a href="./20241115"><rb-manicule></rb-manicule></a></p>
         </div> -->
 
     <!-- POST --> 
     <div class="postbox">
+      <a href="./20241124" class="date">2024 November 24: Arthur Machen's House of Souls</a>
+    <p class="blurb firstpara article">In which I enthuse about finding a particular copy of some creepy old stories that inspired Lovecraft, containing a diabolical bookplate, and evidence of an early feminist bookshop.
+      <a href="./20241124"><rb-manicule></rb-manicule></a></p>
+      </div>
+
+    <!-- POST --> 
+    <div class="postbox">
       <a href="./20241109" class="date">2024 November 9: Curiouser House Publishing</a>
-    <p class="blurb firstpara article">In which I attempt to promote my own dear little publishing business, because why beat around the bush; it's bookish and it's something worth talkin' about.<a href="./20241109"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I attempt to promote my own dear little publishing business, because why beat around the bush; it's bookish and it's something worth talkin' about.
+      <a href="./20241109"><rb-manicule></rb-manicule></a></p>
       </div>
 
     <!-- POST -->
     <div class="postbox">
       <a href="./20241107" class="date">2024 November 7: Micropoetry Throwback</a>
-    <p class="blurb firstpara article">In which I save some old bits of poetry I wrote a while ago on the defunct website Micropoetry.com. Indulge me a moment.<a href="./20241107"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I save some old bits of poetry I wrote a while ago on the defunct website Micropoetry.com. Indulge me a moment.
+      <a href="./20241107"><rb-manicule></rb-manicule></a></p>
      </div>
 
     <!-- POST -->
     <div class="postbox">
       <a href="./20241030" class="date">2024 October 30: Local Library Book Sales</a>
-    <p class="blurb firstpara article">In which I provide a guide and tips as to how to behave at and approach a local library's book sale.<a href="./20241030"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I provide a guide and tips as to how to behave at and approach a local library's book sale.
+      <a href="./20241030"><rb-manicule></rb-manicule></a></p>
      </div>
 
     <!-- POST -->
     <div class="postbox">
       <a href="./20241028" class="date">2024 October 28: Prefatory Notes</a>
-    <p class="blurb firstpara article">In which I take a breath, consider things for a moment, and get a few things off my mind before diving into anything too specific.<a href="./20241028"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I take a breath, consider things for a moment, and get a few things off my mind before diving into anything too specific.
+      <a href="./20241028"><rb-manicule></rb-manicule></a></p>
      </div>
 
     <!-- POST -->
      <div class="postbox">
       <a href="./20241026" class="date">2024 October 26: Raison d'être</a>
-    <p class="blurb firstpara article">In which I attempt to justify to myself the reason for having this blogspace and how I hope to utilize it. Where am I coming from, and where might I venture towards.<a href="./20241026"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I attempt to justify to myself the reason for having this blogspace and how I hope to utilize it. Where am I coming from, and where might I venture towards.
+      <a href="./20241026"><rb-manicule></rb-manicule></a></p>
      </div>
 
      <!-- <div class="postbox align-right"><img class="bodyimg multiply" src="images/wheathrobinson_moonguy.jpg" />

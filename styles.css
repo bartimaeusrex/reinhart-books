@@ -187,12 +187,13 @@ blockquote::before {
   display:block;
 }
 
-.rb_header {
-  width:100%;
-}
+.rb_header {width:100%;}
+.bodyimg {width:100%;}
+.bodyimg50 {width:47%;} /* 50% exactly does not allow for the margin between the images, and so they stack vertically, not horizontally */
 
-.bodyimg {
-  width:100%;
+.gallery {
+  /* align-content: center;
+  margin: auto 0; */
 }
 
 .windowpane {
