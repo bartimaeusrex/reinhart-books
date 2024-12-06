@@ -340,6 +340,8 @@ p.firstpara {
   .content, .postcontent {
     width: 90%;
     margin:auto;
+
+    .windowpane {margin-top:-1.75em;}
   }
 
   .tagline {
