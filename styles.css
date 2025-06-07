@@ -1,7 +1,6 @@
 :root {
   --bg-color: #f0eadcff;
-  --titlebg: url(images/davinci_johnthebaptist_skin.jpg
-  );
+  --titlebg: url(images/reinhartandjasper.jpg);
 }
 
 ::selection {
@@ -293,22 +292,15 @@ blockquote::before {
 .aside::before {content:"["}
 .aside::after {content:"]"}
 
-.article p {
-  text-indent:1.25em;
-}
+.article p {text-indent:1.25em;}
 
-.firstpara::before {
-  content:"¶ ";
-}
-
-p.firstpara {
-  text-indent:0;
-}
+.firstpara::before {content:"¶ ";}
+p.firstpara {text-indent:0;}
 
 .content::after, .postcontent::after {
   font-size:.75em;
   font-family: 'Courier Prime', monospace;
-  content:"© Patrick Reinhart MMXXIV";
+  content:"© Patrick Reinhart MMXXV";
 }
 
 .disclaimer {
@@ -378,7 +370,7 @@ p.firstpara {
   text-transform:capitalize;
 }
 
-.date {
+.date, .producttitle {
   /* margin:2em 2em; */
   text-transform:uppercase;
   color:rgb(24, 61, 26);
@@ -390,13 +382,9 @@ p.firstpara {
   /* another good red - #d25b5b */
 }
 
-.date a {
-  background-color: red;
-}
+.date a {background-color: red;}
 
-.blurb {
-  margin-bottom:2em;
-}
+.blurb {margin-bottom:2em;}
 
 .blurb::after {
   content:"";
@@ -413,13 +401,9 @@ a .blurb {
   margin:1em 0;
 }
 
-.asterism::after {
-  content:"⁂";
-}
+.asterism::after {content:"⁂";}
 
-.fleuron::after {
-  content: "❦";
-}
+.fleuron::after {content: "❦";}
 
 .grenze {
   font-family: "Grenze Gotisch", serif;
@@ -452,16 +436,53 @@ footer {
     gap:0;
   }
 
+.paypalform {
+  /* display:inline-grid; */
+  justify-items:center;
+  align-content:start;
+  /* gap:0.5rem; */
+  }
 
-  
+.paypalcards {
+    width:60%;
+    float:left;
+}
+
+.product {
+    width:100%;
+  }
+
+.productdescription {
+    margin:1em 0;
+  }
+
+.buybutton {
+  background-color: #b87a5686;
+  padding: 1em;
+  margin:1em 0 .5em 1em;
+  border-radius: 20px;
+  border-color: #3d2c23;
+  float:right;
+}
+
+.buybutton:hover {
+  background-color: #59a052de;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.288);
+}
+ 
+.buybutton:active {
+  display:block;
+  top:5px;
+}
+
 /* Scrollbar styles */
 ::-webkit-scrollbar {
-  width: .75em;
+  width: .65vw;
   height: .5em;
   }
   
 ::-webkit-scrollbar-track {border: 1.5px solid #ffffff00;}
-::-webkit-scrollbar-thumb {background: rgb(24, 61, 26);}
+::-webkit-scrollbar-thumb {background: rgba(24, 61, 26, 0.5);}
 ::-webkit-scrollbar-thumb:hover {background: rgb(24, 61, 26);}
 
 

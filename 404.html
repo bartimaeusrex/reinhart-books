@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- RBHeaderInfo contains the Google Fonts code, link to CSS file, favicon, FontAwesome, basic meta info -->
+  <rb-headerinfo></rb-headerinfo>
+
+  <meta charset="UTF-8"><!-- Necessary to have here for special characters -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/fleuron.ico"> <!-- not coming thru via JS file when uploaded for some reason -->
+  <script defer src="RBHeaderInfo.js"></script>
+  <script defer src="RBTitleButton.js"></script>
+  <script defer src="RBManicule.js"></script>
+  <script defer src="RBSignature.js"></script>
+  <script defer src="RBFooter.js"></script>
+
+  <title>Reinhart Books</title>
+</head>
+
+<body>
+  <!-- TITLE BUTTON DEFINED IN RBTitleButton.js WEB COMPONENT -->
+  <rb-titlebutton></rb-titlebutton>
+  
+  <section class="content">
+
+    <a href="./"><img class="rb_header windowpane multiply" src="images/rb_sirinswing_window.png" /></a>
+    <div class="tagline center-this">● a humble oasis of bookish musings from a lifelong lover of literature/erstwhile book dealer/and editor of <a href="https://curiouser.house/" class="hilite">Curiouser House Publishing</a>, indie publisher of classic & obscure books ●</div>
+
+<div class="fleuron"></div>
+
+    <!-- MONTH: OUTSIDE OF THE POSTBOX GRIDS! JUST CREATE ANOTHER POSTBOX GRID FOR NEW MONTHS -->
+    <div class="month"><a>404 NOT FOUND</a></div>
+    <div class="inwhich">In which... oh no!<br />You might want to re-check that URL. Because that particular page does not exist on this website. Never fear, there are plenty of other pages here. Try again.</div>
+    <br />
+
+      <img class="bodyimg multiply center-this" src="images/cu31924024159703_0014.jpg" />
+        <a href="https://archive.org/details/cu31924024159703/mode/1up" class="source highlighter">Illustration by W. Heath Robinson for The Talking Thrush</a>
+
+
+    <!-- FOOTER DEFINED IN RESPECTIVE .JS FILES! -->
+    <rb-footer></rb-footer>
+
+  </section>
+  <!-- COPYRIGHT INFO LINE DEFINED IN STYLES.CSS:
+        .content::after, .postcontent::after -->
+
+
+</body>
+</html>
