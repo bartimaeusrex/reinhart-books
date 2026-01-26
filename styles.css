@@ -181,13 +181,16 @@ blockquote::before {
 } */
 
 .rb_header, .bodyimg {
-  padding:0;
   margin:auto;
   display:block;
 }
 
-.rb_header {width:100%;}
-.bodyimg {width:100%;}
+.rb_header {
+  width:100%;
+  margin:0 0 .75em 0;
+}
+
+.bodyimg {width:100%;  padding:0;}
 .bodyimg50 {width:47%;} /* 50% exactly does not allow for the margin between the images, and so they stack vertically, not horizontally */
 
 .gallery {
@@ -214,6 +217,7 @@ blockquote::before {
 .tagline {
   font-family: 'Courier Prime', monospace;
   font-size:1em;
+  /* padding:1.75em 0em 0em 0em; */
 }
 
 .multiply {mix-blend-mode: multiply;}
@@ -300,7 +304,7 @@ p.firstpara {text-indent:0;}
 .content::after, .postcontent::after {
   font-size:.75em;
   font-family: 'Courier Prime', monospace;
-  content:"© Patrick Reinhart MMXXV";
+  content:"© Patrick Reinhart MMXXVI";
 }
 
 .disclaimer {
@@ -339,7 +343,7 @@ p.firstpara {text-indent:0;}
   .tagline {
     font-size:smaller;
     line-height:90%;
-    margin:.75em 0 0 0;
+    /* padding:.5em 0 0 0; */
   }
 
   .danceofdeathdisclaimer {
@@ -356,6 +360,12 @@ p.firstpara {text-indent:0;}
     content:" × "
   }
 }
+
+  /* .tagline {
+    font-size:smaller;
+    line-height:90%;
+    padding:.25em 0em 0em 0em;
+  } */
 
 .inwhich {
   margin-left:auto;
