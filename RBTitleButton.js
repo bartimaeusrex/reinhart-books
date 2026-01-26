@@ -6,7 +6,7 @@ class RBTitleButton extends HTMLElement {
     constructor() {
         super()
         this.innerHTML = `
-  <a href="./"><p id="title"><!-- #TITLE::AFTER TEXT IN CSS FILE -->
+  <a href="./" target="_self"><p id="title"><!-- #TITLE::AFTER TEXT IN CSS FILE -->
     <img src="images/rb_header_humane.png" width="200px"/>
   </p></a>
         `

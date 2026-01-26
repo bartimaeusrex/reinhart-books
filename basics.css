@@ -1,0 +1,132 @@
+
+
+/* 
+
+Random crap to remember:
+
+CLOCKWISE FROM TOP!:
+padding, margin order: TOP, RIGHT, BOTTOM, LEFT;
+or: TOP/BOTTOM, LEFT/RIGHT; (2em 0 = horizontal spacing)
+
+
+padding is OUTSIDE the div
+border SURROUNDS/BORDERS the div
+margin is WITHIN the div
+
+    From outer area to inner: padding > border > margin
+
+    ...
+
+*/
+
+p {text-wrap:pretty;}
+
+.w-100pc {width: 100%;}
+.w-50pc {width: 50%;}
+.w-1em {width: 1em;}
+.w-2em {width: 2em;}
+.w-3em {width: 3em;}
+.w-4em {width: 4em;}
+.w-5em {width: 5em;}
+.w-6em {width: 6em;}
+.w-8em {width: 8em;}
+.h-05em {height: .5em;}
+.h-1em {height: 1em;}
+.h-2em {height: 2em;}
+.h-3em {height: 3em;}
+.h-4em {height: 4em;}
+.h-5em {height: 5em;}
+.h-6em {height: 6em;}
+.h-8em {height: 8em;}
+.h-100pc {height: 100%;}
+
+.multiply {mix-blend-mode: multiply;}
+.center-this {margin: 0 auto;text-align:center;}
+.hilite {background-color:rgba(255, 230, 0, 0.10)}
+
+.margin1em {margin: 1em;}
+.margin2em {margin: 2em;}
+.padding1em {padding: 1em;}
+.padding2em {padding: 2em;}
+.margin-horiz1em {margin:0em 1em;}
+.margin-horiz2em {margin:0em 2em;}
+.padding-horiz1em {padding:0em 1em;}
+.padding-horiz2em {padding:0em 2em;}
+
+.fleuron {padding:2em 0 1em 0;display:block;}
+
+/* 0 is invisible */
+.opacity0 {opacity: 0%;}
+.opacity10 {opacity: 10%;}
+.opacity20 {opacity: 20%;}
+.opacity30 {opacity: 30%;}
+.opacity40 {opacity: 40%;}
+.opacity50 {opacity: 50%;}
+.opacity60 {opacity: 60%;}
+.opacity70 {opacity: 70%;}
+.opacity80 {opacity: 80%;}
+.opacity90 {opacity: 90%;}
+.opacity100 {opacity: 100%;}
+
+
+.grid2col, .grid3col, .grid4col {display:grid;grid-gap:.5em;}
+.grid2col {grid-template-columns: 1fr 1fr;}
+.grid3col {grid-template-columns: 1fr 1fr 1fr;}
+.grid4col {grid-template-columns: 1fr 1fr 1fr 1fr;}
+
+.bgblack {background-color:black;}
+.txtwhite {color:white;}
+.font-05em {font-size:.5em;}
+.font-075em {font-size:.75em;}
+.z9 {z-index:9;}
+.v-bottom {vertical-align:bottom;}
+.v-middle {vertical-align:middle;}
+
+.displaygrid {display:grid;}
+
+/* FONT BASICS */
+
+.weight400 {font-weight:400;}
+.weight600 {font-weight:600;}
+.italics {font-style:italics;}
+.smallcaps {font-variant: small-caps;}
+
+/* GOOGLE FONTS */
+
+.oswald-sexiness {font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 400;font-style: normal;}
+.abril-fatface-regular {font-family: "Abril Fatface", serif;font-weight: 400;font-style: normal;}
+.anton-regular {font-family: "Anton", sans-serif;font-weight: 400; font-style: normal;}
+.della-respira-regular {font-family: "Della Respira", serif;font-weight: 400;font-style: normal;}
+.eb-garamond-sexiness {font-family: "EB Garamond", serif;font-optical-sizing: auto;font-weight: 400;font-style: normal;}
+.grenze-gotisch-sexiness {font-family: "Grenze Gotisch", serif;font-optical-sizing: auto;font-weight: 400; font-style: normal;}
+.press-start-2p-regular {font-family: "Press Start 2P", system-ui;font-weight: 400;font-style: normal;}
+.schoolbell-regular {font-family: "Schoolbell", cursive;font-weight: 400;font-style: normal;}
+.windsong-regular {font-family: "WindSong", cursive;font-weight: 400;font-style: normal;}
+.windsong-medium {font-family: "WindSong", cursive;font-weight: 500;font-style: normal;}
+.goudy-bookletter-1911-regular {font-family: "Goudy Bookletter 1911", serif;font-weight: 400;font-style: normal;}
+.courier-prime-regular, .courier-prime-bold, .courier-prime-regular-italic, .courier-prime-bold-italic {font-family: "Courier Prime", monospace;}
+.courier-prime-regular {font-weight: 400;font-style: normal;}
+.courier-prime-bold {font-weight: 700;font-style: normal;}
+.courier-prime-regular-italic {font-weight: 400;font-style: italic;}
+.courier-prime-bold-italic {font-weight: 700;font-style: italic;}
+
+
+/* THE FOLLOWING IS FROM https://www.joshwcomeau.com/css/custom-css-reset/ 
+
+RIGHT NOW--10/3/2025--IT FUCKS UP A FEW THINGS.
+
+*/
+
+/* *, *::before, *::after {box-sizing: border-box;}
+* {margin: 0;}
+@media (prefers-reduced-motion: no-preference) {
+  html {interpolate-size: allow-keywords;}}
+body {line-height: 1.5;-webkit-font-smoothing: antialiased;}
+img, picture, video, canvas, svg {display: block;max-width: 100%;}
+input, button, textarea, select {font: inherit;}
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
+p {text-wrap: pretty;}
+h1, h2, h3, h4, h5, h6 {text-wrap: balance;}
+#root, #__next {isolation: isolate;} */
+
+/* THE ABOVE IS FROM https://www.joshwcomeau.com/css/custom-css-reset/ */

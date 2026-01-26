@@ -12,6 +12,7 @@ class RBHeaderInfo extends HTMLElement {
 
 
   <link href="styles.css" rel="stylesheet" />
+  <link href="basics.css" rel="stylesheet" />
   <link rel="shortcut icon" type="image/x-icon" href="images/fleuron.ico">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
